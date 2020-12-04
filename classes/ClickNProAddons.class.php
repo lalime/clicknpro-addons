@@ -27,6 +27,7 @@ class ClickNProAddons
         add_action('save_post', array($adminClass, 'savePostData'));
         add_action('woocommerce_product_data_tabs', array($adminClass, 'subscriptionMetaFields'));
         add_action('woocommerce_product_data_panels', array($adminClass, 'customSubscMetaFields'));
+        add_action('woocommerce_process_product_meta', array($adminClass, 'customSubscMetaSave'));
     }
 
 
